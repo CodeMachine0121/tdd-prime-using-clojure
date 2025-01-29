@@ -10,4 +10,8 @@
   (testing "should got [2]"
       (is (= [2] (prime 2)))
   )
+
+  (testing "should got [3]"
+      (is (= [3] (prime 3)))
+  )
 )
