@@ -6,4 +6,8 @@
   (testing "should got []"
       (is (= [] (prime 1)))
   )
+
+  (testing "should got [2]"
+      (is (= [2] (prime 2)))
+  )
 )
