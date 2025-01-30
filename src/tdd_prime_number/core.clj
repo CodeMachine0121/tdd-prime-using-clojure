@@ -6,7 +6,7 @@
   (loop [n n divisors 2 factors []]
     (if (> n 1)
       (if (zero? (mod n divisors))
-        (recur (/ divisors n) divisors (conj divisors factors))
+        (recur (/ n divisors) divisors (conj factors divisors))
         (recur n (inc divisors) factors)
       )
       factors
